@@ -24,9 +24,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <input
         ref={ref}
-        type='text'
         autoComplete='off'
-        className={cn(inputStyles(), className)}
+        className={cn(inputStyles({ className }))}
         {...props}
       />
     );
